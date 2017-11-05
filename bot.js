@@ -7,9 +7,14 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	bot.sendMessage('Its collo time! Wakey, wakey <@243509481231613963>!');
+    	message.reply('Its collo time! Wakey, wakey <@243509481231613963>!');
   	}
 });
+
+if(input === "collotime")
+{
+    bot.sendMessage(message, "Its collo time! Wakey, wakey <@243509481231613963>! (๑˃̵　ᴗ　˂̵)و")
+}
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
