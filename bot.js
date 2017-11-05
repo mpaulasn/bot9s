@@ -8,12 +8,10 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('Its collo time, @243509481231613963>!');
-  	}
 });
 
-if(input === "!collotime")
-{
-    bot.sendMessage(message, "Its collo time! Wakey, wakey <@243509481231613963>! (๑˃̵　ᴗ　˂̵)و")
+if(input === "!collotime") {
+    sendMessage('Its collo time! Wakey, wakey <@243509481231613963>! (๑˃̵　ᴗ　˂̵)و');
 }
 
 // THIS  MUST  BE  THIS  WAY
